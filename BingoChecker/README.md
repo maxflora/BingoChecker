@@ -1,6 +1,6 @@
 # 線上賓果對獎程式
 
-http://derayga.github.io/bingo/  
+http://maxflora.github.io/bingo/  
 
 - 自定賓果卡內容
 - 自動對獎
