@@ -145,10 +145,19 @@ function checkBingoLine(card){
 				card.bingoNums[y][x].className = card.bingoNums[y][x].className.replace(' on', ' go');
 			}
 		}
-
-		setTimeout(function(){
-			alert("！！！賓果！！！");
-		}, 500);
+		var noAlert = getData("noAlert");
+		if(noAlert != 1) {
+			setTimeout(function(){
+				alert("！！！賓果！！！");
+				// if the ok button is clicked, result will be true (boolean)
+				var result = confirm( "是否不再提示?" );			
+				if ( result ) {
+				    // the user clicked ok
+				    setData("noAlert", 1);	
+				} 
+			}, 500);
+		}
+				
 	} else 	{
 		card.rootNode.className = 'cardContainer';
 
