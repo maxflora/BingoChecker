@@ -1,6 +1,6 @@
 
 var bingoStart = 1;
-var bingoEnd = 99;
+var bingoEnd = 75;
 
 
 function btnClick(){
