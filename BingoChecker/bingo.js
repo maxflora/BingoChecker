@@ -241,7 +241,7 @@ function createNewBingoCard() {
 	newCard.value = [
 		['', '', '', '', ''],
 		['', '', '', '', ''],
-		['', '', 'free', '', ''],
+		['', '', '', '', ''],
 		['', '', '', '', ''],
 		['', '', '', '', '']
 	];
@@ -306,10 +306,10 @@ function addNumber(value){
 				arr[x] = value;
 
 				newCard.bingoNums[y][x].innerText = value;
-				if(y == 4 && x == 4){
+				//if(y == 4 && x == 4){
 
-				}else
-					return;
+				//}else
+				//	return;
 			}
 		}
 	}
